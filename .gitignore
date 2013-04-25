@@ -1,4 +1,7 @@
 *.log
 *.pot
 *.pyc
+bin
+include
+lib
 local_settings.py

@@ -1,1 +1,2 @@
 Django==1.5.1
+django-model-utils==1.2.0

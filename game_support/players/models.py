@@ -3,9 +3,9 @@ from model_utils.models import TimeStampedModel
 
 # Create your models here.
 class Player(TimeStampedModel):
-    first_name = models.CharField(max_length=255)
-    last_name = models.CharField(max_length=255)
-    nickname = models.CharField(max_length=255)
+    first_name = models.CharField(blank=True, max_length=255)
+    last_name = models.CharField(blank=True, max_length=255)
+    nickname = models.CharField(blank=True, max_length=255)
     wins = models.IntegerField(blank=True, default=0)
     losses = models.IntegerField(blank=True, default=0)
     curr_win_streak = models.IntegerField(blank=True, default=0)
